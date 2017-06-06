@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using JavaScript</title></head>
+<style>
+body,ol{
+text-align:center;
+}
+</style>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+<p>Using javascript to do something intersting</p>
+
+<p>JavaScript can change HTML attributes.</p>
+
+<p>In this case JavaScript changes the source attribute of an image.</p>
+<ol><li>
+<p><strong>You can also hover the mouse onto the bulb to turn on and off the bulb</strong></p></li>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" onmouseover="changeImage(this)" onmouseout="resetImg(this)" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<li><p><strong>OR you can click on the buttons to switch on and off the bulb</strong></p></li>
+
+
+
+</ol>
+
+
+<!-- link to the javascript file-->
+<script src = "index.js"></script>
+
+</body>
+</html>
